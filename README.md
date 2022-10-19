@@ -21,7 +21,7 @@ virtualenv venv
 ```
 # git bash
 source ./venv/Scripts/activate
-# cmd of Powersheel
+# cmd of Powershell
 .\venv\Scripts\activate
 # OSX
 source ./venv/bin/activate

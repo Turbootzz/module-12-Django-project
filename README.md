@@ -19,7 +19,12 @@ virtualenv venv
 
 ### activeer de virtual env
 ```
+# git bash
 source ./venv/Scripts/activate
+# cmd of Powersheel
+.\venv\Scripts\activate
+# OSX
+source ./venv/bin/activate
 ```
 
 ### installeer de benodigde modules
@@ -27,7 +32,7 @@ source ./venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
-### make de databaseschem aan op basis van de models
+### make de databaseschema aan op basis van de models
 ```
 python manage.py migrate
 ```

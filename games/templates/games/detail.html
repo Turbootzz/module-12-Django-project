@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>Details van {{ game.title }}</h1>
+    <h2>{{ game.genre }}</h2>
+    <p>{{ game.body }}</p>
+    <img src="{{ game.image.url }}" />
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>Games: </h1>
+    {% for game in games.all %}
+
+        <a href="/games/{{ game.id }}">
+            <h2>{{ game.title }}</h2>
+            <h3>{{ game.genre }}</h3>
+            <img src="{{ game.image.url }}" width="200px" />
+        </a>
+
+    {% endfor %}
+{% endblock %}

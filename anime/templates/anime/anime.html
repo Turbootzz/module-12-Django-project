@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>Anime: </h1>
+    {% for anime in animes.all %}
+
+        <a href="/anime/{{ anime.id }}">
+            <h2>{{ anime.title }}</h2>
+            <h3>{{ anime.genre }}</h3>
+            <img src="{{ anime.image.url }}" width="200px" />
+        </a>
+
+    {% endfor %}
+{% endblock %}

@@ -19,6 +19,7 @@ from django.urls import path, include
 from django.conf import settings
 import werken.views
 import games.views
+import anime.views
 
 from . import views
 from django.conf.urls.static import static
@@ -28,6 +29,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', views.home, name='home'),
     path('', werken.views.home, name='home'),
+    path('', anime.views.home, name='home'),
     path('werken/', include('werken.urls')),
     path('games/', include('games.urls')),
+    path('anime/', include('anime.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
